@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+  padding-bottom: 5rem;
+
+}
+
+header{
+  display: flex;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+img {
+  width: 7rem;
+  margin: 1rem;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+p {
+  padding: .5rem;
+  font-size: large;
+  background-color: dimgray;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+  
+}
+
+h2 {
+color: red;
+margin-top: 3rem;
+font-size:x-large;
+margin-left: 1rem;
+margin-bottom: .5rem;
+}
+
+h3 {
+  color: red;
+  margin-top: 3rem;
+  font-size:x-large;
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+  }
+
+ul {
+  color: red;
+}
+
+li {
+  color: red;
+  margin-left: 1.5rem;
+  margin-top: .5rem;
+}
