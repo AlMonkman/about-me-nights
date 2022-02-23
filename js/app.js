@@ -5,40 +5,43 @@ let user = prompt('What is your name?');
 alert(`Welcome ${user}! Please answer the following questions with either \'yes\' or \'no\'.`);
 
 firstQuestion();
+secondQuestion();
 
 function firstQuestion() {
   let questionOne = prompt('Is my name Alan?');
 
   if (questionOne.toLowerCase() === 'yes' || questionOne.toLowerCase() === 'y') {
-  // console.log('Yes! That is my name.');
+    // console.log('Yes! That is my name.');
     alert('Yes! That is my name.');
     total++;
   }
   else if (questionOne.toLowerCase() === 'no' || questionOne.toLowerCase() === 'n') {
-  // console.log('Actually, that is my name!');
+    // console.log('Actually, that is my name!');
     alert('Actually, that is my name!');
   }
   else {
-  // console.log('Please follow the instructions (:');
+    // console.log('Please follow the instructions (:');
     alert('Please follow the instructions (:');
   }
 }
-let questionTwo = prompt('Am I 26 years old?');
 
-if (questionTwo.toLowerCase() === 'yes' || questionTwo.toLowerCase() === 'y') {
-  // console.log('Yup, I am 26 years old.');
-  alert('Yup, I am 26 years old.');
-  total++;
-}
-else if (questionTwo.toLowerCase() === 'no' || questionTwo.toLowerCase() === 'n') {
-  // console.log('Actually, I am 26 years old.');
-  alert('Actually, I am 26 years old.');
-}
-else {
-  // console.log('Please follow the instructions (:');
-  alert('Please follow the instructions (:');
-};
+function secondQuestion() {
+  let questionTwo = prompt('Am I 26 years old?');
 
+  if (questionTwo.toLowerCase() === 'yes' || questionTwo.toLowerCase() === 'y') {
+    // console.log('Yup, I am 26 years old.');
+    alert('Yup, I am 26 years old.');
+    total++;
+  }
+  else if (questionTwo.toLowerCase() === 'no' || questionTwo.toLowerCase() === 'n') {
+    // console.log('Actually, I am 26 years old.');
+    alert('Actually, I am 26 years old.');
+  }
+  else {
+    // console.log('Please follow the instructions (:');
+    alert('Please follow the instructions (:');
+  }
+}
 let questionThree = prompt('Am I an astronaut?');
 
 if (questionThree.toLowerCase() === 'yes' || questionThree.toLowerCase() === 'y') {
@@ -120,7 +123,7 @@ let cerealArray = ['frosted flakes', 'honeycomb', 'cookie crisp', 'trix'];
 
 while (attempts !== 0) {
 
-  
+
   let questionSeven = prompt(`Alright ${user} I\'m a big fan of eating cereal before bed. Can you guess what one of my favorite cereals is? You have ${attempts} attempts left.`);
 
   for (let i = 0; i < cerealArray.length; i++) {
