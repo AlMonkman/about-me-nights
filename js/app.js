@@ -9,6 +9,8 @@ secondQuestion();
 thirdQuestion();
 fourthQuestion();
 fifthQuestion();
+sixthQuestion();
+
 
 function firstQuestion() {
   let questionOne = prompt('Is my name Alan?');
@@ -101,34 +103,36 @@ function fifthQuestion() {
   }
 }
 
+function sixthQuestion() {
+  let guesses = 4;
 
-let guesses = 4;
+  while (guesses !== 0) {
 
-while (guesses !== 0) {
+    let questionSix = prompt('What is my favorite number?! Here\'s a hint, it\'s between 0 and 30.');
 
-  let questionSix = prompt('What is my favorite number?! Here\'s a hint, it\'s between 0 and 30.');
+    if (questionSix > 27) {
+      alert(`${questionSix} is too high! You have ${guesses - 1} guesses left.`);
+      guesses--;
+    }
 
-  if (questionSix > 27) {
-    alert(`${questionSix} is too high! You have ${guesses - 1} guesses left.`);
-    guesses--;
+    else if (questionSix < 27) {
+      alert(`${questionSix} is too low! You have ${guesses - 1} guesses left.`);
+      guesses--;
+    }
+
+    else if (questionSix == 27) {
+      alert(`Wow! Great job, ${questionSix} is my favorite number!`);
+      total++;
+      break;
+    }
+
   }
 
-  else if (questionSix < 27) {
-    alert(`${questionSix} is too low! You have ${guesses - 1} guesses left.`);
-    guesses--;
+  if (guesses === 0) {
+    alert('Good try! But my favorite number is actaully 27.');
   }
-
-  else if (questionSix == 27) {
-    alert(`Wow! Great job, ${questionSix} is my favorite number!`);
-    total++;
-    break;
-  }
-
 }
 
-if (guesses === 0) {
-  alert('Good try! But my favorite number is actaully 27.');
-}
 
 let attempts = 6;
 let cerealArray = ['frosted flakes', 'honeycomb', 'cookie crisp', 'trix'];
