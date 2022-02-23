@@ -10,6 +10,7 @@ thirdQuestion();
 fourthQuestion();
 fifthQuestion();
 sixthQuestion();
+seventhQuestion();
 
 
 function firstQuestion() {
@@ -133,27 +134,29 @@ function sixthQuestion() {
   }
 }
 
+function seventhQuestion() {
+  let attempts = 6;
+  let cerealArray = ['frosted flakes', 'honeycomb', 'cookie crisp', 'trix'];
 
-let attempts = 6;
-let cerealArray = ['frosted flakes', 'honeycomb', 'cookie crisp', 'trix'];
-
-while (attempts !== 0) {
+  while (attempts !== 0) {
 
 
-  let questionSeven = prompt(`Alright ${user} I\'m a big fan of eating cereal before bed. Can you guess what one of my favorite cereals is? You have ${attempts} attempts left.`);
+    let questionSeven = prompt(`Alright ${user} I\'m a big fan of eating cereal before bed. Can you guess what one of my favorite cereals is? You have ${attempts} attempts left.`);
 
-  for (let i = 0; i < cerealArray.length; i++) {
+    for (let i = 0; i < cerealArray.length; i++) {
 
-    if (questionSeven.toLowerCase() === cerealArray[i]) {
-      alert(`Great job! I love ${questionSeven}.`);
-      attempts = 1;
-      total++;
-      break;
+      if (questionSeven.toLowerCase() === cerealArray[i]) {
+        alert(`Great job! I love ${questionSeven}.`);
+        attempts = 1;
+        total++;
+        break;
+      }
+
     }
+    attempts--;
 
   }
-  attempts--;
-
+  alert('My favorite cereals are Frosted Flakes, Honeycomb, Cookie Crisp and Trix!');
 }
-alert('My favorite cereals are Frosted Flakes, Honeycomb, Cookie Crisp and Trix!');
+
 alert(`Good job ${user} you got ${total} correct!`);
