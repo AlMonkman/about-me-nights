@@ -8,6 +8,7 @@ firstQuestion();
 secondQuestion();
 thirdQuestion();
 fourthQuestion();
+fifthQuestion();
 
 function firstQuestion() {
   let questionOne = prompt('Is my name Alan?');
@@ -81,21 +82,25 @@ function fourthQuestion() {
     alert('Please follow the instructions (:');
   }
 }
-let questionFive = prompt('Am I a big fan of video games?');
 
-if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y') {
-  // console.log('You are absolutely right. I have always been a big fan of video games.');
-  alert(`You are absolutely right ${user}. I have always been a big fan of video games.`);
-  total++;
+function fifthQuestion() {
+  let questionFive = prompt('Am I a big fan of video games?');
+
+  if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y') {
+    // console.log('You are absolutely right. I have always been a big fan of video games.');
+    alert(`You are absolutely right ${user}. I have always been a big fan of video games.`);
+    total++;
+  }
+  else if (questionFive.toLowerCase() === 'no' || questionFive.toLowerCase() === 'n') {
+    // console.log('Sorry, but I am definitely a big fan of video games.');
+    alert(`Sorry ${user}, but I am definitely a big fan of video games.`);
+  }
+  else {
+    // console.log('Please follow the instructions (:');
+    alert('Please follow the instructions (:');
+  }
 }
-else if (questionFive.toLowerCase() === 'no' || questionFive.toLowerCase() === 'n') {
-  // console.log('Sorry, but I am definitely a big fan of video games.');
-  alert(`Sorry ${user}, but I am definitely a big fan of video games.`);
-}
-else {
-  // console.log('Please follow the instructions (:');
-  alert('Please follow the instructions (:');
-};
+
 
 let guesses = 4;
 
