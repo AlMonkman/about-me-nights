@@ -42,21 +42,24 @@ function secondQuestion() {
     alert('Please follow the instructions (:');
   }
 }
-let questionThree = prompt('Am I an astronaut?');
 
-if (questionThree.toLowerCase() === 'yes' || questionThree.toLowerCase() === 'y') {
-  // console.log('Ha, no I wish.');
-  alert('Ha, no I wish.');
+function thirdQuestion() {
+  let questionThree = prompt('Am I an astronaut?');
+
+  if (questionThree.toLowerCase() === 'yes' || questionThree.toLowerCase() === 'y') {
+    // console.log('Ha, no I wish.');
+    alert('Ha, no I wish.');
+  }
+  else if (questionThree.toLowerCase() === 'no' || questionThree.toLowerCase() === 'n') {
+    // console.log('You\'re right. I wish I was though!');
+    alert('You\'re right. I wish I was though!');
+    total++;
+  }
+  else {
+    // console.log('Please follow the instructions (:');
+    alert('Please follow the instructions (:');
+  }
 }
-else if (questionThree.toLowerCase() === 'no' || questionThree.toLowerCase() === 'n') {
-  // console.log('You\'re right. I wish I was though!');
-  alert('You\'re right. I wish I was though!');
-  total++;
-}
-else {
-  // console.log('Please follow the instructions (:');
-  alert('Please follow the instructions (:');
-};
 
 let questionFour = prompt('Was I previously a mailman?');
 
