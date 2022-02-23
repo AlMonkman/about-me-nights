@@ -6,6 +6,8 @@ alert(`Welcome ${user}! Please answer the following questions with either \'yes\
 
 firstQuestion();
 secondQuestion();
+thirdQuestion();
+fourthQuestion();
 
 function firstQuestion() {
   let questionOne = prompt('Is my name Alan?');
@@ -61,22 +63,24 @@ function thirdQuestion() {
   }
 }
 
-let questionFour = prompt('Was I previously a mailman?');
 
-if (questionFour.toLowerCase() === 'yes' || questionFour.toLowerCase() === 'y') {
-  // console.log('Yes I was!');
-  alert('Yes I was!');
-  total++;
-}
-else if (questionFour.toLowerCase() === 'no' || questionFour.toLowerCase() === 'n') {
-  // console.log('Wrong, I worked for USPS up until the start of 2022.');
-  alert('Wrong, I worked for USPS up until the start of 2022.');
-}
-else {
-  // console.log('Please follow the instructions (:');
-  alert('Please follow the instructions (:');
-};
+function fourthQuestion() {
+  let questionFour = prompt('Was I previously a mailman?');
 
+  if (questionFour.toLowerCase() === 'yes' || questionFour.toLowerCase() === 'y') {
+    // console.log('Yes I was!');
+    alert('Yes I was!');
+    total++;
+  }
+  else if (questionFour.toLowerCase() === 'no' || questionFour.toLowerCase() === 'n') {
+    // console.log('Wrong, I worked for USPS up until the start of 2022.');
+    alert('Wrong, I worked for USPS up until the start of 2022.');
+  }
+  else {
+    // console.log('Please follow the instructions (:');
+    alert('Please follow the instructions (:');
+  }
+}
 let questionFive = prompt('Am I a big fan of video games?');
 
 if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y') {
