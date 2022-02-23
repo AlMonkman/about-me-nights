@@ -4,22 +4,25 @@ let total = 0;
 let user = prompt('What is your name?');
 alert(`Welcome ${user}! Please answer the following questions with either \'yes\' or \'no\'.`);
 
-let questionOne = prompt('Is my name Alan?');
+firstQuestion();
 
-if (questionOne.toLowerCase() === 'yes' || questionOne.toLowerCase() === 'y') {
+function firstQuestion() {
+  let questionOne = prompt('Is my name Alan?');
+
+  if (questionOne.toLowerCase() === 'yes' || questionOne.toLowerCase() === 'y') {
   // console.log('Yes! That is my name.');
-  alert('Yes! That is my name.');
-  total++;
-}
-else if (questionOne.toLowerCase() === 'no' || questionOne.toLowerCase() === 'n') {
+    alert('Yes! That is my name.');
+    total++;
+  }
+  else if (questionOne.toLowerCase() === 'no' || questionOne.toLowerCase() === 'n') {
   // console.log('Actually, that is my name!');
-  alert('Actually, that is my name!');
-}
-else {
+    alert('Actually, that is my name!');
+  }
+  else {
   // console.log('Please follow the instructions (:');
-  alert('Please follow the instructions (:');
-};
-
+    alert('Please follow the instructions (:');
+  }
+}
 let questionTwo = prompt('Am I 26 years old?');
 
 if (questionTwo.toLowerCase() === 'yes' || questionTwo.toLowerCase() === 'y') {
