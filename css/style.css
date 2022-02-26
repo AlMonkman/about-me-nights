@@ -6,21 +6,28 @@ body {
 
 header{
   display: block;
+  text-align: center;
 }
 
 img {
   width: 7rem;
-  margin: 1rem;
-  display: block;
 }
 
+#headingImageOne{
+  text-align: left;
+}
+
+#headingImageTwo{
+  text-align: right;
+}
 
 h1 {
   color: red;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 5%;
   font-size: 4rem;
   font-weight: bolder;
+  display: inline;
 }
 
 p {
